@@ -19,16 +19,28 @@ const TimeTable = () => {
     { name: 'Fajr', begins: todayPrayers?.Fajr?.Begins, jamaah: todayPrayers?.Fajr?.['Jama\'ah'], icon: <Moon className="w-6 h-6" /> },
     { name: 'Sunrise', begins: todayPrayers?.Sunrise, jamaah: null, icon: <Sunrise className="w-6 h-6" /> },
     { name: 'Zuhr', begins: todayPrayers?.Zuhr?.Begins, jamaah: todayPrayers?.Zuhr?.['Jama\'ah'], icon: <Sun className="w-6 h-6" /> },
-    { name: 'Asr', begins: todayPrayers?.Asr?.Begins, jamaah: todayPrayers?.Asr?.['Jama\'ah'], icon: <CloudSun className="w-6 h-6" /> },
+    { 
+      name: 'Asr', 
+      begins: todayPrayers?.Asr?.Begins, 
+      jamaah: todayPrayers?.Asr?.['Jama\'ah'], 
+      icon: <CloudSun className="w-6 h-6" />,
+      mithl1: todayPrayers?.Asr?.['1 Mithl'] || undefined,
+      mithl2: todayPrayers?.Asr?.['2 Mithl'] || undefined,
+      isAsr: true
+    },
     { name: 'Maghrib', begins: todayPrayers?.Maghrib?.Begins, jamaah: todayPrayers?.Maghrib?.['Jama\'ah'], icon: <Sunset className="w-6 h-6" /> },
     { name: 'Isha', begins: todayPrayers?.Isha?.Begins, jamaah: todayPrayers?.Isha?.['Jama\'ah'], icon: <Moon className="w-6 h-6" /> },
   ];
 
   const formatTime = (time: number | undefined) => {
     if (!time) return 'N/A';
+    
+    // Convert decimal time to hours and minutes
     const hours = Math.floor(time);
-    const minutes = Math.round((time - hours) * 60);
-    return `${hours}:${minutes.toString().padStart(2, '0')}`;
+    // Convert decimal part to minutes (e.g., 0.21 means 21 minutes)
+    const minutes = Math.round((time % 1) * 100);
+    
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -37,8 +49,8 @@ const TimeTable = () => {
       <div className="space-y-3">
         <div className="flex items-center gap-4 px-4 mb-2">
           <div className="w-1/2"></div>
-          <div className="w-1/4 text-right text-sm font-medium text-gray-600">Begins</div>
-          <div className="w-1/4 text-right text-sm font-medium text-gray-600">Jama'ah</div>
+          <div className="w-1/4 text-right pr-4 text-sm font-medium text-gray-600">Begins</div>
+          <div className="w-1/4 text-right pr-4 text-sm font-medium text-gray-600">Jama'ah</div>
         </div>
         {prayerTimes.map((prayer) => (
           <TimeCard
@@ -50,7 +62,10 @@ const TimeTable = () => {
               </div>
             }
             timeBegins={formatTime(prayer.begins)}
-            timeJamaah={prayer.jamaah ? formatTime(prayer.jamaah) : ''}
+            timeJamaah={prayer.jamaah ? formatTime(prayer.jamaah) : undefined}
+            mithl1={prayer.mithl1 ? formatTime(prayer.mithl1) : undefined}
+            mithl2={prayer.mithl2 ? formatTime(prayer.mithl2) : undefined}
+            isAsr={prayer.isAsr}
           />
         ))}
       </div>
