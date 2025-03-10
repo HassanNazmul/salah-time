@@ -1,6 +1,6 @@
 import React from 'react';
 import TimeTable from './TimeTable';
-// import MosqueTable from './MosqueTable';
+import MosqueTable from './MosqueTable';
 
 const LandingPage = () => {
   return (
@@ -16,7 +16,7 @@ const LandingPage = () => {
             </div>
             {/* Right Section - MosqueTable */}
             <div className="w-full">
-              {/* <MosqueTable /> */}
+              <MosqueTable />
             </div>
           </div>
         </section>
