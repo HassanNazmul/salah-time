@@ -8,7 +8,7 @@ interface MosqueCardProps {
         postcode: string;
         country: string;
     };
-    distance?: string;
+    distance?: number;
     facilities?: string[];
 }
 
