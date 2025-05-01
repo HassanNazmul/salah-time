@@ -16,7 +16,7 @@ const MosqueCard: React.FC<MosqueCardProps> = ({ mosqueName, address, distance, 
   const formattedAddress = `${address.street}, ${address.city}, ${address.postcode}`
 
   return (
-    <div className="w-full p-4 border border-gray-200 rounded-md bg-white">
+    <div className="w-full p-4 border border-gray-200 rounded-md bg-white flex-1">
       <div className="flex flex-col justify-between h-full">
         <div className="flex justify-between items-start gap-4 mb-2">
           <div className="flex flex-col gap-1">

@@ -15,7 +15,7 @@ const CurrentMosqueCard: React.FC<CurrentMosqueCardProps> = ({ mosque, nextPraye
   const formattedAddress = `${mosque.address.street}, ${mosque.address.city}, ${mosque.address.postcode}`
 
   return (
-    <div className="w-full p-4 border border-emerald-200 rounded-md bg-white mb-4 relative">
+    <div className="w-full p-4 border border-emerald-200 rounded-md bg-white mb-4 relative flex-1">
       <div className="absolute -top-2.5 left-4 px-2 py-0.5 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full border border-emerald-200">
         Current Mosque
       </div>

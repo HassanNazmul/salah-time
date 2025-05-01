@@ -11,7 +11,9 @@ const MosqueTable = () => {
 
   return (
     <div className="space-y-4">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-6">Local Mosques</h2>
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-semibold text-gray-900">Local Mosques</h2>
+      </div>
       <MosqueSearch onSearchResults={setFilteredMosques} />
       <MosqueList mosques={filteredMosques} />
     </div>
