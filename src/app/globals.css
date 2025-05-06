@@ -21,5 +21,38 @@ body {
   color: var(--foreground);
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, Helvetica, Arial,
+    sans-serif;
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: var(--scrollbar-track, #f1f1f1);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, #c1c1c1);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover, #a1a1a1);
+}
+
+.scrollbar-thumb-rounded-full::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}
+
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  --scrollbar-thumb: #d1d5db;
+  --scrollbar-thumb-hover: #9ca3af;
+}
+
+.scrollbar-track-gray-100::-webkit-scrollbar-track {
+  --scrollbar-track: #f3f4f6;
 }

@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Central Mosque",
+    "address": {
+      "street": "123 Main Street",
+      "city": "London",
+      "postcode": "E1 6AN",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 7123 4567",
+      "email": "info@centralmosque.org",
+      "website": "www.centralmosque.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Library", "Parking"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Ramadan Programs"]
+  },
+  {
+    "id": 2,
+    "name": "East London Mosque",
+    "address": {
+      "street": "82-92 Whitechapel Road",
+      "city": "London",
+      "postcode": "E1 1JQ",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 7650 3000",
+      "email": "info@eastlondonmosque.org.uk",
+      "website": "www.eastlondonmosque.org.uk"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Library", "Parking", "Funeral Services"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Marriage Services", "Counseling"]
+  },
+  {
+    "id": 3,
+    "name": "Finsbury Park Mosque",
+    "address": {
+      "street": "7-11 St Thomas's Road",
+      "city": "London",
+      "postcode": "N4 2QH",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 7456 9789",
+      "email": "info@finsburyparkmosque.org",
+      "website": "www.finsburyparkmosque.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Community Center"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Youth Activities"]
+  },
+  {
+    "id": 4,
+    "name": "Brixton Mosque",
+    "address": {
+      "street": "1 Gresham Road",
+      "city": "London",
+      "postcode": "SW9 7PH",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 7326 4133",
+      "email": "info@brixtonmosque.org.uk",
+      "website": "www.brixtonmosque.org.uk"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Bookshop"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "New Muslim Support"]
+  },
+  {
+    "id": 5,
+    "name": "Regent's Park Mosque",
+    "address": {
+      "street": "146 Park Road",
+      "city": "London",
+      "postcode": "NW8 7RG",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 7724 3363",
+      "email": "info@iccuk.org",
+      "website": "www.iccuk.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Library", "Bookshop", "Cafe"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Tours", "Interfaith Activities"]
+  },
+  {
+    "id": 6,
+    "name": "Croydon Mosque",
+    "address": {
+      "street": "525 London Road",
+      "city": "Croydon",
+      "postcode": "CR7 6AR",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 8689 7463",
+      "email": "info@croydonmosque.com",
+      "website": "www.croydonmosque.com"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Parking"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Community Events"]
+  },
+  {
+    "id": 7,
+    "name": "Wembley Central Mosque",
+    "address": {
+      "street": "14 Ealing Road",
+      "city": "Wembley",
+      "postcode": "HA0 4TL",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 8903 9024",
+      "email": "info@wembleymosque.org",
+      "website": "www.wembleymosque.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Madrasah"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Quranic Studies"]
+  },
+  {
+    "id": 8,
+    "name": "Hounslow Mosque",
+    "address": {
+      "street": "367 Wellington Road South",
+      "city": "Hounslow",
+      "postcode": "TW4 5HU",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 8572 2786",
+      "email": "info@hounslowmosque.org",
+      "website": "www.hounslowmosque.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Community Hall"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Funeral Services"]
+  },
+  {
+    "id": 9,
+    "name": "Tooting Islamic Centre",
+    "address": {
+      "street": "145 Upper Tooting Road",
+      "city": "London",
+      "postcode": "SW17 7TJ",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 8767 7891",
+      "email": "info@tootingislamiccentre.org",
+      "website": "www.tootingislamiccentre.org"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Madrasah"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Youth Activities"]
+  },
+  {
+    "id": 10,
+    "name": "Palmers Green Mosque",
+    "address": {
+      "street": "30 Oakthorpe Road",
+      "city": "London",
+      "postcode": "N13 5JL",
+      "country": "United Kingdom"
+    },
+    "contact": {
+      "phone": "020 8920 3430",
+      "email": "info@palmersgreenmasjid.org.uk",
+      "website": "www.palmersgreenmasjid.org.uk"
+    },
+    "facilities": ["Prayer Hall", "Wudu Area", "Women's Section", "Library"],
+    "services": ["Daily Prayers", "Jummah", "Islamic Classes", "Community Events"]
+  }
+]
